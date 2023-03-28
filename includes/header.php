@@ -17,9 +17,10 @@
     integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/redesign/assets/css/dist/style.css">
+  <?php include('includes/svg-sprites/icons.php'); ?>
 </head>
 
-<body>
+<body>  
   <nav class="navbar navbar-expand-lg navbar-light bg-light py-3" aria-label="primary navigation">
     <div class="container">
       <a class="navbar-brand fw-bold" href="/">GoldenCarers</a>

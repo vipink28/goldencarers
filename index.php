@@ -1,5 +1,5 @@
 <?php include('includes/header.php'); ?>
-<div>
+<div class="container">
     <a class="text-dark fs-5 px-3" href="activities.php">Activities</a>
     <a class="text-dark fs-5 px-3" href="categories.php">Categories</a>
 </div>
