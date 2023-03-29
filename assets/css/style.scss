@@ -189,6 +189,17 @@ body {
 }
 
 .activity-filter-dropdown {
+    .dropdown-toggle {
+        &::after {
+            display: none;
+        }
+    }
+}
+.category-dropdown{
+    min-width: 204px;
+}
+
+.activity-filter-dropdown, .category-dropdown{
     .dropdown-menu {
         top: 130%;
         min-width: 304px;
@@ -206,16 +217,20 @@ body {
             background-color: #AAAAAA;
         }
     }
-
-    .dropdown-toggle {
-        &::after {
-            display: none;
-        }
+}
+.activity-grid{
+    .col, .image-box{
+        width: 216px;
+    }
+    .col{
+        box-sizing: content-box;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .image-box{
+        height: 216px;
     }
 }
-
-
-
 
 /*media queries*/
 @media(min-width: 992px) {
