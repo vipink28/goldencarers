@@ -1,3 +1,8 @@
+<?php
+$protocol = empty($_SERVER['HTTPS']) ? 'http://' : 'https://';
+$servername = $_SERVER['SERVER_NAME'];
+$root = $protocol . $servername . '/';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +21,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
     integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/redesign/assets/css/dist/style.css">
+  <link rel="stylesheet" href="<?=$root?>redesign/assets/css/dist/style.css">
   <?php include('includes/svg-sprites/icons.php'); ?>
 </head>
 
