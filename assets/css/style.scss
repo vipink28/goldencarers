@@ -181,12 +181,32 @@ body {
 .comment-badge {
     top: .75rem;
     right: .75rem;
+    z-index: 5;
+}
 
-    .icon {
-        max-width: 14px;
-        max-height: 14px;
+.activity-multi-slider{
+    .comment-badge{
+        &::after{
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            margin-left: .5rem;
+            background: url('../../images/icons/comment.svg') no-repeat;
+            background-size: contain;
+        }
     }
 }
+
+.category-badge{
+    z-index: 5;
+    bottom: .75rem;
+    .icon{
+        width: 14px;
+        height: 14px;
+    }
+}
+
 
 .activity-filter-dropdown {
     .dropdown-toggle {
@@ -233,6 +253,27 @@ body {
     }
     .image-box{
         height: 216px;
+        .overlay{            
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 100%;
+            transition: all .2s ease-in-out;
+        }
+        .grid-image{
+            transition: transform .2s ease-in-out;
+        }
+        &:hover{
+            .grid-image{
+                transform: scale(1.1, 1.1);
+            }
+            .overlay{
+                top: 0;
+                background: rgb(0,0,0);
+                background: linear-gradient(0deg, rgba(0,0,0,0.5046393557422969) 0%, rgba(0,212,255,0) 100%);
+            }
+            
+        }
     }
 }
 

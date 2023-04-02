@@ -23,7 +23,7 @@ $newActivities = array(12, 8, 23, 100, 20, 2, 34, 12);
 			<p>Save time with 1000s of activity ideas & helpful resources. Plan and implement activity programs that are stimulating, relevant, and suit a wide range of needs and interests.</p>
 		</div>
 		<div class="col-lg-6 offset-lg-1">
-			<div class="bg-secondary p-4 rounded-5 overflow-hidden">
+			<div class="bg-secondary p-4 rounded-5 overflow-hidden activity-multi-slider">
 				<div class="d-flex align-items-center">
 					<h3 class="fw-bold text-black mb-0">What's New</h3>
 					<div class="d-flex ms-auto">
@@ -49,9 +49,7 @@ $newActivities = array(12, 8, 23, 100, 20, 2, 34, 12);
 						<div class="rounded-3 overflow-hidden me-3 flex-shrink-0 card p-1 bg-light border-0">
 							<span class="badge rounded-pill d-inline-flex align-items-center flex-shrink-0 text-bg-primary position-absolute bg-white border border-1 text-primary comment-badge fs-9">
 								<?= $commentCount ?>
-								<svg class="icon ms-1">
-									<use xlink:href="#comment"></use>
-								</svg>
+
 							</span>
 							<img class="slider-image" src="<?= $root ?>/redesign/assets/images/rounded-rectangle.png">
 						</div>
@@ -73,23 +71,23 @@ $newActivities = array(12, 8, 23, 100, 20, 2, 34, 12);
 			<a href="#" class="fs-7 text-primary fw-bold text-capitalize text-decoration-none dropdown-toggle p-2 rounded-3 bg-light d-flex justify-content-between align-items-center" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 				All Categories
 			</a>
-			<div  class="dropdown-menu py-2 rounded-4">
-			<ul class="fs-7 text-primary text-capitalize overflow-auto">
-				
-				<?php foreach ($allActivities as $activity)
-				{ ?>
-					<li><a class="dropdown-item fw-semibold d-flex align-items-center py-2" href="#">
-							<div class="rounded-1 icon-box d-flex align-items-center justify-content-center bg-secondary me-2 overflow-hidden">
-								<svg class="icon">
-									<use xlink:href="#home"></use>
-								</svg>
-							</div> <?= $activity ?> <span class="fs-8 ms-auto text-light">12</span>
-						</a></li>
-				<?php
-				}
-				?>
+			<div class="dropdown-menu py-2 rounded-4">
+				<ul class="fs-7 text-primary text-capitalize overflow-auto">
 
-			</ul>
+					<?php foreach ($allActivities as $activity)
+					{ ?>
+						<li><a class="dropdown-item fw-semibold d-flex align-items-center py-2" href="#">
+								<div class="rounded-1 icon-box d-flex align-items-center justify-content-center bg-secondary me-2 overflow-hidden">
+									<svg class="icon">
+										<use xlink:href="#home"></use>
+									</svg>
+								</div> <?= $activity ?> <span class="fs-8 ms-auto text-light">12</span>
+							</a></li>
+					<?php
+					}
+					?>
+
+				</ul>
 			</div>
 		</div>
 
@@ -118,8 +116,19 @@ $newActivities = array(12, 8, 23, 100, 20, 2, 34, 12);
 			{
 			?>
 				<a href="#" class="col text-center flex-shrink-0 flex-grow-0 text-decoration-none">
-					<div class="rounded-4 overflow-hidden image-box">
+					<div class="rounded-4 overflow-hidden image-box position-relative">
+						<span class="badge rounded-pill d-inline-flex align-items-center flex-shrink-0 text-bg-primary position-absolute bg-white border border-1 text-primary comment-badge fs-9">
+							100 <small class="text-muted ms-1 fs-9">+4</small>
+						</span>
 						<img class="grid-image" src="<?= $root ?>/redesign/assets/images/rounded-square.png">
+						<div class="overlay">
+							<span class="badge rounded-pill d-inline-flex align-items-center flex-shrink-0 text-bg-primary position-absolute start-50 translate-middle-x bg-white border border-1 text-primary category-badge fs-9">
+								<svg class="icon me-1">
+									<use xlink:href="#home"></use>
+								</svg>
+								Category Tags
+							</span>
+						</div>
 					</div>
 					<p class="fs-5 text-primary fw-bold mt-3 text-capitalize"><?= $activity ?></p>
 				</a>
