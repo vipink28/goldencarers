@@ -68,12 +68,14 @@ $newActivities = array(12, 8, 23, 100, 20, 2, 34, 12);
 	<div class="my-3">
 		<p class="text-light fw-semibold fs-9">Categories</p>
 	</div>
-	<div class="d-flex mb-5">
+	<div class="d-flex mb-5 position-relative">
 		<div class="dropdown category-dropdown">
 			<a href="#" class="fs-7 text-primary fw-bold text-capitalize text-decoration-none dropdown-toggle p-2 rounded-3 bg-light d-flex justify-content-between align-items-center" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 				All Categories
 			</a>
-			<ul class="dropdown-menu fs-7 text-primary text-capitalize rounded-4 overflow-auto">
+			<div  class="dropdown-menu py-2 rounded-4">
+			<ul class="fs-7 text-primary text-capitalize overflow-auto">
+				
 				<?php foreach ($allActivities as $activity)
 				{ ?>
 					<li><a class="dropdown-item fw-semibold d-flex align-items-center py-2" href="#">
@@ -86,10 +88,12 @@ $newActivities = array(12, 8, 23, 100, 20, 2, 34, 12);
 				<?php
 				}
 				?>
+
 			</ul>
+			</div>
 		</div>
 
-		<div class="d-flex fw-semibold text-capitalize mx-auto">
+		<div class="d-flex fw-semibold text-capitalize mx-auto position-absolute start-50 top-50 translate-middle">
 			<a class="rounded-pill bg-light px-3 py-2 mx-2 text-primary text-decoration-none" href="#">quiz</a>
 			<a class="rounded-pill bg-light px-3 py-2 mx-2 text-primary text-decoration-none" href="#">bingo</a>
 			<a class="rounded-pill bg-light px-3 py-2 mx-2 text-primary text-decoration-none" href="#">trivia</a>
@@ -97,7 +101,7 @@ $newActivities = array(12, 8, 23, 100, 20, 2, 34, 12);
 			<a class="rounded-pill bg-light px-3 py-2 mx-2 text-primary text-decoration-none" href="#">who am i</a>
 		</div>
 
-		<div class="dropdown filter-dropdown">
+		<div class="dropdown filter-dropdown ms-auto">
 			<a href="#" class="fs-7 text-primary fw-bold text-capitalize text-decoration-none dropdown-toggle p-2 border border-1 d-flex justify-content-between align-items-center rounded-2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 				Most Popular
 			</a>

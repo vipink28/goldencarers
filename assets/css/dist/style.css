@@ -165,11 +165,16 @@ body {
   min-width: 304px;
   max-height: 364px;
 }
-.activity-filter-dropdown .dropdown-menu::-webkit-scrollbar, .category-dropdown .dropdown-menu::-webkit-scrollbar {
-  width: 14px;
-  background-color: white;
+.activity-filter-dropdown .dropdown-menu ul, .category-dropdown .dropdown-menu ul {
+  max-height: 345px;
+  list-style: none;
+  padding-left: 0;
 }
-.activity-filter-dropdown .dropdown-menu::-webkit-scrollbar-thumb, .category-dropdown .dropdown-menu::-webkit-scrollbar-thumb {
+.activity-filter-dropdown .dropdown-menu ul::-webkit-scrollbar, .category-dropdown .dropdown-menu ul::-webkit-scrollbar {
+  width: 14px;
+  background-color: inherit;
+}
+.activity-filter-dropdown .dropdown-menu ul::-webkit-scrollbar-thumb, .category-dropdown .dropdown-menu ul::-webkit-scrollbar-thumb {
   border: 4px solid rgba(0, 0, 0, 0);
   background-clip: padding-box;
   border-radius: 9999px;

@@ -29,7 +29,8 @@ $allActivities = array("what's new", "articles", "games", "alzheimer's & dementi
             <?= $name ?>
             <span class="ms-2"><?= $count ?></span>
           </a>
-          <ul class="dropdown-menu translate-middle-x start-50 fs-7 text-primary text-capitalize rounded-4 overflow-auto">
+          <div  class="dropdown-menu translate-middle-x start-50 py-2 rounded-4">
+          <ul class="fs-7 text-primary text-capitalize overflow-auto">
             <li><a class="dropdown-item fw-semibold d-flex align-items-center py-2" href="#">
                 <div class="rounded-1 icon-box d-flex align-items-center justify-content-center bg-secondary me-2">
                   <svg class="icon">
@@ -48,6 +49,7 @@ $allActivities = array("what's new", "articles", "games", "alzheimer's & dementi
             }
             ?>
           </ul>
+          </div>
         </div>
       <?php
       }
