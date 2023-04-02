@@ -5,19 +5,16 @@ $newActivities = array(12, 8, 23, 100, 20, 2, 34, 12);
 ?>
 <main class="container">
 	<!--breadcrumbs -->
-	<nav aria-label="breadcrumb">
+	<nav aria-label="breadcrumb" class="mb-3">
 		<ol class="breadcrumb fw-semibold py-3">
 			<li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home</a></li>
-			<span class="breadcrumb-divider px-2"><svg class="icon">
-					<use xlink:href="#chev-right"></use>
-				</svg></span>
 			<li class="breadcrumb-item active" aria-current="page">Activities</li>
 		</ol>
 	</nav>
 	<!--breadcrumbs -->
 
 
-	<div class="row align-items-center py-5">
+	<div class="row align-items-center pb-5">
 		<div class="col-lg-5 text-black">
 			<h2 class="fw-bold">Actitivities for Seniors</h2>
 			<p>Save time with 1000s of activity ideas & helpful resources. Plan and implement activity programs that are stimulating, relevant, and suit a wide range of needs and interests.</p>
@@ -26,7 +23,7 @@ $newActivities = array(12, 8, 23, 100, 20, 2, 34, 12);
 			<div class="bg-secondary p-4 rounded-5 overflow-hidden activity-multi-slider">
 				<div class="d-flex align-items-center">
 					<h3 class="fw-bold text-black mb-0">What's New</h3>
-					<div class="d-flex ms-auto">
+					<div class="d-flex ms-auto nav-icons">
 						<span class="pe-1">
 							<svg class="icon">
 								<use xlink:href="#Chevron-round-left"></use>
